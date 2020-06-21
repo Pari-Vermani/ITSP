@@ -1,6 +1,3 @@
-## README.md
-That *mandatory* README file
-
 ## Institute Technical Summer Project
 A pen-type portable device and a trajectory recognition algorithm.
 
