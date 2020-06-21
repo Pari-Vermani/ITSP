@@ -4,7 +4,7 @@ That *mandatory* README file
 ## Institute Technical Summer Project
 A pen-type portable device and a trajectory recognition algorithm.
 
-[Flowchart](/img/Flowchart.jpeg)
+[Flowchart](/Images/Flowchart.jpeg)
 
 **Signal acquisition**
 The acceleration signals measured from the triaxial accelerometer are transmitted to a computer via the wireless module. Users can utilize this digital pen to write digits and make hand gestures at normal speed. The measured acceleration signals of these motions can be recognized by the trajectory recognition algorithm. 
@@ -39,4 +39,4 @@ Linear discriminant analysis (LDA) is to reduce the dimension of the feature spa
 **Classifier**
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
 
-[Block Diagram](/img/Block%20diagram.jpeg)
+[Block Diagram](/Images/Block%20diagram.jpeg)
