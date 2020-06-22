@@ -11,7 +11,7 @@ from filename.innerfile import*
 
 def main():
   #Import csv file with the data values
-  acc_inputs=pd.read_csv("ITSP/____.csv")
+  acc_inputs=pd.read_csv("Input_file.csv")
   
   print('csv file read')
   
