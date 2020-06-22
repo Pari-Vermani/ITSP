@@ -24,7 +24,7 @@ The signal preprocessing procedure consists of:
 The characteristics of different hand movement signals can be obtained by extracting features from the pre-processed x, y, and z-axis signals
 
 **Feature Selection**
-Because the amount of the extracted features is large, we adopt KBCS to select most useful features and then use LDA to reduce the dimensions of features.
+Because the amount of the extracted features is large, we adopt Kernal-Based Class Separability to select most useful features and then use Linear Discriminant Analysis to reduce the dimensions of features.
 
 Before classifying the hand motion trajectories, we perform the procedures of feature selection and extraction methods. In general, feature selection aims at selecting a subset of size m from an original set of d features (d > m) 
 
