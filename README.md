@@ -37,3 +37,9 @@ Linear discriminant analysis (LDA) is to reduce the dimension of the feature spa
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
 
 [Block Diagram](/Images/Block%20diagram.jpeg)
+
+#### Links to Documentation
+
+ - [Final Documentation](https://docs.google.com/document/d/1eJqBa40CPGVSAjVPga0h5ZBtP_GfkC4jkALfkZNsrUk/edit)
+ - [Two Page Documentation](https://docs.google.com/document/d/1VDUPizK79FmGiAJCUSacQf7sq-F9xhPe6UNA24ouiEk/edit)
+ - [Final Presentation](https://docs.google.com/presentation/d/13ECMv_6HX_5BkdorZ3mrw2cdAeByihjqaWwI72OVzTo/edit#slide=id.p)
