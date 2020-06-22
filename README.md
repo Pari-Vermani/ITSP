@@ -23,6 +23,8 @@ The signal preprocessing procedure consists of:
 **Feature Generation**
 The characteristics of different hand movement signals can be obtained by extracting features from the pre-processed x, y, and z-axis signals
 
+[Block Diagram](/Images/Block%20diagram.jpeg)
+
 **Feature Selection**
 Because the amount of the extracted features is large, we adopt Kernal-Based Class Separability to select most useful features and then use Linear Discriminant Analysis to reduce the dimensions of features.
 
@@ -35,8 +37,6 @@ LDA is to reduce the dimension of the feature space with a better recognition pe
 
 **Classifier**
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
-
-[Block Diagram](/Images/Block%20diagram.jpeg)
 
 #### Links to Documentation
 
