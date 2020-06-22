@@ -28,10 +28,10 @@ Because the amount of the extracted features is large, we adopt Kernal-Based Cla
 
 Before classifying the hand motion trajectories, we perform the procedures of feature selection and extraction methods. In general, feature selection aims at selecting a subset of size m from an original set of d features (d > m) 
 
-Therefore, the criterion of kernel-based class reparability (KBCS) with best individual N (BIN) is to select significant features from the original features (i.e., to pick up some important features from d). 
+Therefore, the criterion of KBCS reparibility with best individual N (BIN) is to select significant features from the original features (i.e., to pick up some important features from d). 
 
 **Feature Extraction**
-Linear discriminant analysis (LDA) is to reduce the dimension of the feature space with a better recognition performance (i.e., to reduce the size of m). The objective of the feature selection and feature extraction methods is not only to ease the burden of computational load but also to increase the accuracy of classification.
+LDA is to reduce the dimension of the feature space with a better recognition performance (i.e., to reduce the size of m). The objective of the feature selection and feature extraction methods is not only to ease the burden of computational load but also to increase the accuracy of classification.
 
 **Classifier**
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
