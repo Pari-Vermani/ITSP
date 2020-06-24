@@ -13,6 +13,7 @@ The acceleration signals measured from the triaxial accelerometer are transmitte
 **Signal Preprocessing**
 The signal preprocessing procedure consists of: 
 
+ - Reduction of Dimension
  - Calibration( to remove drift errors and offsets from the raw signals )
  - A moving average filter( to remove high frequency noise from raw data )
  - A high-pass filter( to remove gravitational acceleration from raw data )
@@ -25,15 +26,8 @@ The characteristics of different hand movement signals can be obtained by extrac
 
 [Block Diagram](/Images/Block%20diagram.jpeg)
 
-**Feature Selection**
-Because the amount of the extracted features is large, we adopt Kernal-Based Class Separability to select most useful features and then use Linear Discriminant Analysis to reduce the dimensions of features.
-
-Before classifying the hand motion trajectories, we perform the procedures of feature selection and extraction methods. In general, feature selection aims at selecting a subset of size m from an original set of d features (d > m) 
-
-Therefore, the criterion of KBCS reparibility with best individual N (BIN) is to select significant features from the original features (i.e., to pick up some important features from d). 
-
-**Feature Extraction**
-LDA is to reduce the dimension of the feature space with a better recognition performance (i.e., to reduce the size of m). The objective of the feature selection and feature extraction methods is not only to ease the burden of computational load but also to increase the accuracy of classification.
+**Image Generation**
+Lorem ipsum dolor sit amet
 
 **Classifier**
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
