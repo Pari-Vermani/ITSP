@@ -3,7 +3,6 @@
 """
 signal_processing.py
 ~~~~~~~~~~
-HOPEFULLY IT WORKS
 
 A module to implement the signal preprocessing of which consists of: Calibration( to remove drift errors and offsets from the raw signals )
 A moving average filter( to remove high frequency noise from raw data ), a high-pass filter( to remove gravitational acceleration from raw data ) and normalization*. It is not optimized, and omits many desirable features.
