@@ -1,7 +1,7 @@
-# %load signal_proc.py
+# %load signal_processing.py
 
 """
-signal_proc.py
+signal_processing.py
 ~~~~~~~~~~
 HOPEFULLY IT WORKS
 
