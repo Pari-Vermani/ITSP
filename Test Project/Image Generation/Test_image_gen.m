@@ -1,9 +1,11 @@
 n = 1000;
-x = linspace(0, 2*pi, n);
-x = reshape(x, [n, 1]);
-y = sin(x);
-writematrix([x,y],'M7.xlsx','Sheet',1,'Range','A1:B1000')
-plot(x,y)
-xlabel('x')
-ylabel('sin(x)')
+filename = 'M7.xlsx';
+t = linspace(0, 2*pi, n);
+t = reshape(t, [n, 1]);
+x = zeros(n,1);
+y = sin(t);
+writematrix([x,y],filename,'Sheet',1,'Range','A1:B1000')
+plot(t,y)
+xlabel('t')
+ylabel('sin(t)')
 title('Plot of the Sine Function')
