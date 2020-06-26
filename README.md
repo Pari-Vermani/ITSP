@@ -7,8 +7,8 @@ A pen-type portable device and a trajectory recognition algorithm.
 The acceleration signals measured from the triaxial accelerometer are transmitted to a computer via the wireless module. Users can utilize this digital pen to write digits and make hand gestures at normal speed. The measured acceleration signals of these motions can be recognized by the trajectory recognition algorithm. 
 
  - Accelerometer: The acceleration signals of hand motions are measured by the pen-type portable device
- - Gyroscope: To improve accelerometer accuracy
- - Magnetometer: To recalibrate the sensor
+ - Gyroscope: To improve accelerometer accuracy (not used in the current model)
+ - Magnetometer: To recalibrate the sensor (not used in the current model)
 
 **Signal Preprocessing**
 The signal preprocessing procedure consists of: 
