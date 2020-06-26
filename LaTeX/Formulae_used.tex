@@ -124,6 +124,20 @@
 		where \textit{g} is the acceleration due to gravity
 \end{itemize}
 
+\textbf{Image Generation:}
+
+\begin{itemize}
+	\item \textbf{Velocity}
+		\begin{eqnarray}
+		  v_i = v_{i-1} + \frac{(a_i + a_{i-1})}{2}*t
+		\end{eqnarray}
+
+	\item \textbf{Position}
+		\begin{eqnarray}
+		  r_i = r_{i-1} + \frac{(v_i + v_{i-1})}{2}*t
+		\end{eqnarray}
+\end{itemize}
+
 \textbf{Neural Network:}
 
 \begin{itemize}
@@ -170,10 +184,10 @@
 		  \Delta C \approx -\eta
 		  \nabla C \cdot \nabla C = -\eta \|\nabla C\|^2
 		\end{eqnarray}
-		and this guarantees that \begin{math}\Delta C \leq 0\end{math}, i.e., \begin{math}C\end{math} will always decrease. To make gradient descent work correctly, \begin{math}\eta\end{math}is chosen to be small enough that Equation (9) is a good approximation and \begin{math}\Delta C \leq 0\end{math} holds true. At the same time, \begin{math}\eta\end{math} can't be too small and the gradient descent algorithm will work very slowly.
+		and this guarantees that \begin{math}\Delta C \leq 0\end{math}, i.e., \begin{math}C\end{math} will always decrease. To make gradient descent work correctly, \begin{math}\eta\end{math}is chosen to be small enough that Equation 11) is a good approximation and \begin{math}\Delta C \leq 0\end{math} holds true. At the same time, \begin{math}\eta\end{math} can't be too small and the gradient descent algorithm will work very slowly.
 
 	\item \textbf{Applying Gradient Descent}
-		The idea is to use gradient descent to find the weights \begin{math}w_k\end{math} and biases \begin{math}b_l\end{math} which minimize the cost in Equation (8). Writing out the gradient descent update rule in terms of components:
+		The idea is to use gradient descent to find the weights \begin{math}w_k\end{math} and biases \begin{math}b_l\end{math} which minimize the cost in Equation (10). Writing out the gradient descent update rule in terms of components:
 		\begin{eqnarray}
 		  w_k & \rightarrow & w_k' = w_k-\eta \frac{\partial C}{\partial w_k} \\
 		  b_l & \rightarrow & b_l' = b_l-\eta \frac{\partial C}{\partial b_l}.
