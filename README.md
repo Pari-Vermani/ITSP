@@ -27,7 +27,11 @@ The characteristics of different hand movement signals can be obtained by extrac
 [Block Diagram](/Images/Block%20diagram.jpeg)
 
 **Image Generation**
-Lorem ipsum dolor sit amet
+
+ -Converting the pre-processed x, y, and z-axis acceleration signals into discrete position points in a 2D plane using integrals
+ -Creating an image after plotting the position points on a 2D plane
+ -Resizing the image and converting the image into a monochrome image to fit the input format of the Neural Network
+ -Storing the image as an (28,28) array
 
 **Classifier**
 The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
