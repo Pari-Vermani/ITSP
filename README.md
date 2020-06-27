@@ -34,7 +34,7 @@ The characteristics of different hand movement signals can be obtained by extrac
  - Storing the image as an (28,28) array
 
 **Classifier**
-The reduced features are used as the inputs of classifiers. In this project, we are going to adopt a probabilistic neural network (PNN) as the classifier for handwritten digit and hand gesture recognition.
+The generated image is recognised using a neural network that was trained using the MNIST data set
 
 #### Links to Documentation
 
