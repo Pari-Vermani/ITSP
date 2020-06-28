@@ -49,7 +49,14 @@ Future plans
 - be able to identify a simple "1" by next meet
 
 #4 - 16/6/20
-
+Found a few models for removing noise
+  For high frequency vibrations, we settled on using a moving average filter
+  For gravitational acceleration, we ditched the plan to use a Kalman filter due to the complexity involved in it. A high pass filter will be used
+The need for a reduction in dimensions were discussed as it was correctly pointed out the writing in itself can only take place in 2 dimensions but the orientation of the pen can be held at infinitely different angles. After a detailed discussion, we understood that a constraint must be placed due to the lack of a magnetometer, that the z axis should be parallel to the ground. Pari will work on this
+The image generation code gave non satisfactory results, which was later attributed to a problem in the array indexing. This will be fixed
+Aruja will work on a main script to execute the whole loop later this week.
+All the data in the google drive will be migrated to the GitHub repository to maintain uniformity and consistency.
+The neural network code didn't run to completion. The error will be debugged
 
 #5 - 23/6/20
 MA filter, high pass filters are ready
@@ -57,7 +64,7 @@ Rotational (transformation) matrix is in the works
 Wrote main script
 Image generation code needs refining
 Sensor acquisition code has sourced from a github repo
-Nn code is ready and working
+NN code is ready and working
 I have uploaded the updated flowcharts on the Github repo
 We need to discuss and agree on how to fill those docs
 I believe you have added text in the inspiration for our idea section. I have filled up everything else other than the progress, result and learning values
@@ -65,3 +72,11 @@ We can progress and result after the meeting today. Can someone fill up learning
 Frequency of signal? Low frequency results in less accurate readings
 High frequency results in high computational load even though it exponentially increases accuracy of readings
 
+#6 - 27/6/20
+A final discussion on who is presenting and if there is a further need for documentation
+The GitHub repository has been thoroughly gone through, the final documentation, two pager documentation and presentation were all completed and it was decided that Aravind will present
+Everyone has a good understanding on the work done by each member in the team, and will be able to cover if the presentation doesn't run as smooth as expected
+A complete MIL simulation was run live, and the results were satisfactory.
+An error in the LaTeX documentation was pointed out in the formula of the moving average filter, this will be rectified immediately
+Our mentor was updated about the happenings and we were given the green light
+We are good to go
