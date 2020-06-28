@@ -2,8 +2,8 @@ def image_generate():
     #This function doesn't have any parameter the input file from which the acceleration values are taken is called 
     #'acc.csv'
     #Here t is the smapling time 
-    #The created images are saved by the name 'image_<num>.jpeg' where num is the serial number corresponding to the image 
-    #generated at different stages of image processing and the final csv file is named as 'image_final.csv'
+    #The created images is saved by the name 'image_1.jpeg'
+    #This function returns the an 28,28 array of the image
     
     #Calling the required libraries
     #%matplotlib inline
@@ -76,13 +76,26 @@ def image_generate():
     img = Image.open('image_1.jpeg')                      # open colour image
     img = img.convert('L')                                # convert image to black and white
     img = img.resize((20, 20), PIL.Image.ANTIALIAS)
-    img.save('image_2.jpeg')
-
+    
+    
+    #This block of code converts the Image object into a numpy array
+    img_straight_array = np.array(img.getdata())
+    img_array= []
+    for i in range(20):
+        img_array.append(img_straight_array[i*20:(i+1)*20])
+    
+    img_array = np.asarray(img_array)
+    
 
     
-    #The following code converts the monochrome image into data points for a csv file
-    img_array = (plt.imread('image_2.jpeg'))
+    #The following code converts the monochrome image into data points compatible with the Neural Network
     final_array = np.zeros((28,28))
     final_array[4:24,4:24] = (1-img_array/255)
-    np.savetxt('image_final.csv', final_array,fmt='%10.4f', delimiter=',')
-    #Here final_array is the final array
+    
+    
+    #This block increases the magnitude of each value by a constant factor
+    m = 0.95/final_array.max()
+    final_array = final_array*m
+    final_array = np.around(final_array, 4)
+    
+    return final_array
