@@ -112,7 +112,7 @@
 	\item \textbf{Moving Average Filter:}
 		A filter used to remove high frequency noise from raw data
 		\begin{eqnarray}
-		   filtered\_output\_ma = \frac{1}{n} \sum_{i=0}^{N - n + 1} \sum_{j=i}^{i+n} sensor\_output\_red_j
+		   filtered\_output\_ma_i = \frac{1}{n} \sum_{j=i}^{i+n} sensor\_output\_red_j \ \forall \ i \ \in \left[ \  0,\ N - n \ \right]
 		\end{eqnarray}
 		where n is a variable over which the number of recent readings are averaged
 
@@ -131,6 +131,7 @@
 		\begin{eqnarray}
 		  v_i = v_{i-1} + \frac{(a_i + a_{i-1})}{2}*t
 		\end{eqnarray}
+		acceleration is assumed to be \textit{piece-wise} linear and the area under the line is found
 
 	\item \textbf{Position}
 		\begin{eqnarray}
